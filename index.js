@@ -53,7 +53,7 @@ async function collectData(page, page_count, url) {
 
 function saveData(data) {
     let date = new Date().getTime();
-    fs.writeFileSync(`../collected_data/catalog${date}.json`, JSON.stringify(data))
+    fs.writeFileSync(`./collected_data/catalog${date}.json`, JSON.stringify(data))
 }
 
 main()
